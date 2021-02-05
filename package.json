@@ -1,0 +1,25 @@
+{
+  "name": "instagram-webhook",
+  "version": "1.0.0",
+  "description": "Envois une notification lors d'une nouvelle publication instragram sur discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T-TutoRapide/Instagram-Webhook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T-TutoRapide/Instagram-Webhook/issues"
+  },
+  "homepage": "https://github.com/T-TutoRapide/Instagram-Webhook#readme",
+  "dependencies": {
+    "instagram-basic-data-scraper-with-username": "^4.0.1",
+    "node-fetch": "^2.6.1",
+    "scraper-instagram": "^1.0.17",
+    "user-instagram": "^2.1.9"
+  }
+}
