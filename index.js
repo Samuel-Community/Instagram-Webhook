@@ -3,8 +3,6 @@ const path = require('path');
 const {readFileSync, writeFileSync} = require('fs');
 const {webhook, sessionID, user} = require("./config.js");
 
-console.log(webhook)
-
 console.log('Instagram Webhook Start')
 
 setInterval(function() {
