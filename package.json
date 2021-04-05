@@ -17,9 +17,6 @@
   },
   "homepage": "https://github.com/T-TutoRapide/Instagram-Webhook#readme",
   "dependencies": {
-    "instagram-basic-data-scraper-with-username": "^4.0.1",
-    "node-fetch": "^2.6.1",
-    "scraper-instagram": "^1.0.17",
-    "user-instagram": "^2.1.9"
+    "axios": "^0.21.1"
   }
 }
