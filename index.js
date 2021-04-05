@@ -1,7 +1,9 @@
 const {get, post} = require("axios");
-const sesi = "sessionid"; //instagram.com
 const path = require('path');
 const {readFileSync, writeFileSync} = require('fs');
+const {webhook, sessionID, user} = require("./config.js");
+
+console.log(webhook)
 
 console.log('Instagram Webhook Start')
 
@@ -10,8 +12,8 @@ setInterval(function() {
     let current = {}
     try { current = JSON.parse(readFileSync(path.join(__dirname, 'current.json'), 'utf8')) } catch(e) {}
 
-    get(`https://instagram.com/TutoRapide/?__a=1`, { headers: { 
-        cookie: `sessionid=${sesi}` 
+    get(`https://instagram.com/${user}/?__a=1`, { headers: { 
+        cookie: `sessionid=${sessionID}` 
     }
 }).then(async (res) => {
 
@@ -25,7 +27,7 @@ setInterval(function() {
 
          console.log( latest === current)
 
-        await post('urlwebhook', {
+        await post(webhook, {
              "username": res.data.graphql.user.full_name,
              "avatar_url": res.data.graphql.user.profile_pic_url_hd,
              "embeds": [
