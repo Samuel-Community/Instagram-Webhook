@@ -34,13 +34,9 @@ setInterval(function() {
                      color: `15258703`,
                      url: `https://www.instagram.com/p/${res.data.graphql.user.edge_owner_to_timeline_media.edges[0].node.shortcode}`,
                      description: res.data.graphql.user.edge_owner_to_timeline_media.edges[0].node.edge_media_to_caption.edges[0].node.text,
-                     author: {
-                         name: res.data.graphql.user.full_name,
-                         icon_url: res.data.graphql.user.profile_pic_url_hd
-                     },
-                     image: {
-                         url: res.data.graphql.user.edge_owner_to_timeline_media.edges[0].node.display_url
-                     }
+                     author: { name: res.data.graphql.user.full_name, icon_url: res.data.graphql.user.profile_pic_url_hd },
+                     image: { url: res.data.graphql.user.edge_owner_to_timeline_media.edges[0].node.display_url },
+                     footer: { icon_url: res.data.graphql.user.profile_pic_url_hd, text: res.data.graphql.user.full_name },
                  }
              ],
          });
