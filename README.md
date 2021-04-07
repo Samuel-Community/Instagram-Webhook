@@ -27,7 +27,10 @@ Chercher **sessionid** à coter de celui se trouve une **valeur**, copier celui-
 
 ![sessionID](https://sharemedia.tutorapide.xyz/c7nifVrx.png)
 
+Une fois que tout ceçi est fait. Faite node **index.js** une requette serra faites toutes les 20 secondes.
 
+Pour garder le programe lancer un arriere plan sur votre vous pouvez utiliser **pm2** si vous l'avez. **pm2 start index.js --name "Webhook-Intagram"**.
+Vous pouvez choisir le nom que vous souhaitez.
 
 ##### Contact
 
