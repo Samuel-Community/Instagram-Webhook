@@ -1,7 +1,7 @@
 {
   "name": "instagram-webhook",
   "version": "1.0.0",
-  "description": "Envois une notification lors d'une nouvelle publication instragram sur discord",
+  "description": "Send a notification when you post a new instragram on discord",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
