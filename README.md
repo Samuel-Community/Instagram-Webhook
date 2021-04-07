@@ -1,36 +1,37 @@
 # Instagram-Webhook
-Envois une notification lors d'une nouvelle publication instragram sur discord
+
+Send a notification when you post a new instragram on discord
 
 ## Installation
 
-Clonez le **Projet** ou télécharger le.
+Clone the **Project** or download it.
 
-Ouvrez ensuite un terminal dans le dossier du projet.
+Then open a terminal in the project folder.
 
-Faite un **npm install** pour installer les dépendances.
+Do an **npm install** to install the dependencies.
 
-Changer le nom du fichier **exempleconfig.js** en **config.js**
+Change the name of the file **example_config.js** to **config.js**
 
-Et compléter les informartions suivantes. Mettre les informations dans les **' '**
+And complete the following information. Put the information in the **' '**
 
-    webhook: 'Lien du webhook discord',
-    sessionID: 'Cookie de la session',
-    user: 'Pseudo du compte instagram'
+    webhook: 'Link webkoook',
+    sessionID: 'Session cookie',
+    user: 'Instagram account username'
 
-Comment avoir le sessionID rendez-vous sur instagram.com , et connectez-vous.
+How to get the sessionID go to instagram.com , and login.
 
-Puis faite **CTRL + SHIFT + I**.
+Press **CTRL + SHIFT + I**.
 
-Rendez-vous dans l'onglet **Application** / **Stockage** le nom peut changer selons votre navigateur.
+Go to the tab **Application** / **Storage** the name may change depending on your browser.
 
-Chercher **sessionid** à coter de celui se trouve une **valeur**, copier celui-çi , et collez dans le sessionID.
+Search for **sessionid** next to the one with the **value**, copy it, and paste it into the sessionID.
 
 ![sessionID](https://sharemedia.tutorapide.xyz/c7nifVrx.png)
 
-Une fois que tout ceçi est fait. Faite node **index.js** une requette serra faites toutes les 20 secondes.
+Once all this is done. Make node **index.js** a request will be made every 20 seconds.
 
-Pour garder le programe lancer un arriere plan sur votre vous pouvez utiliser **pm2** si vous l'avez. **pm2 start index.js --name "Webhook-Intagram"**.
-Vous pouvez choisir le nom que vous souhaitez.
+To keep the program running in the background on your server you can use **pm2** if you have it. **pm2 start index.js --name "Webhook-Intagram "**.
+You can choose any name you want.
 
 ##### Contact
 
@@ -38,4 +39,4 @@ Discord: *𝓢amuel#7455*
 
 ![Discord Banner 2](https://discordapp.com/api/guilds/753294055554809956/widget.png?style=banner2)
 
-Fait avec 💖 par [TutoRapide](https://discord.gg/YM9XTZP)
+Made with 💖 by [TutoRapide](https://discord.gg/YM9XTZP)
