@@ -53,4 +53,4 @@ setInterval(function () {
         console.log('New POST')
     });
 
-}, 20000)
+}, 600000)
