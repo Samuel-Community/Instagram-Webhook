@@ -7,7 +7,7 @@ const { get, post } = require("axios"),
 
 console.log('Instagram Webhook Start');
 
-setInterval(function () {
+//setInterval(function () {
 
     let current = {}
     try { current = JSON.parse(readFileSync(path.join(__dirname, 'current.json'), 'utf8')) } catch (e) { };
@@ -17,6 +17,7 @@ setInterval(function () {
             cookie: `sessionid=${sessionID}`
         }
     }).then(async (res) => {
+        console.log(res.data.graphql)
 
         try {
 
@@ -53,4 +54,4 @@ setInterval(function () {
         console.log('New POST')
     });
 
-}, 600000)
+//}, 600000)
