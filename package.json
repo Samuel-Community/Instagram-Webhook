@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/T-TutoRapide/Instagram-Webhook#readme",
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "node-cron": "^3.0.0"
   }
 }
