@@ -26,12 +26,12 @@ Go to the tab **Application** / **Storage** the name may change depending on you
 
 Search for **sessionid** next to the one with the **value**, copy it, and paste it into the sessionID.
 
-![sessionID](https://sharemedia.tutorapide.xyz/c7nifVrx.png)
-
 Once all this is done. Make node **index.js** a request will be made every 20 seconds.
 
 To keep the program running in the background on your server you can use **pm2** if you have it. **pm2 start index.js --name "Webhook-Intagram "**.
 You can choose any name you want.
+
+**Works only on public profiles**
 
 ##### Contact
 
