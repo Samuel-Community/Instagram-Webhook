@@ -3,11 +3,13 @@ const { get, post } = require("axios"),
 
  { readFileSync, writeFileSync } = require('fs'),
 
- { webhook, sessionID, user } = require("./config.js");
+ { webhook, sessionID, user } = require("./config.js"),
+  cron = require('node-cron');
 
 console.log('Instagram Webhook Start');
 
-//setInterval(function () {
+    cron.schedule('*/20 * * * *', () => {
+        console.log('running a task every 20 minute');
 
     let current = {}
     try { current = JSON.parse(readFileSync(path.join(__dirname, 'current.json'), 'utf8')) } catch (e) { };
@@ -17,7 +19,6 @@ console.log('Instagram Webhook Start');
             cookie: `sessionid=${sessionID}`
         }
     }).then(async (res) => {
-        console.log(res.data.graphql)
 
         try {
 
@@ -53,5 +54,4 @@ console.log('Instagram Webhook Start');
         writeFileSync(path.join(__dirname, 'current.json'), JSON.stringify(current), 'utf8')
         console.log('New POST')
     });
-
-//}, 600000)
+})
